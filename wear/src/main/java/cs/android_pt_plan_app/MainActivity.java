@@ -10,7 +10,7 @@ import java.text.SimpleDateFormat;
 import java.util.Date;
 import java.util.Locale;
 
-public class Watch_Notificatier extends WearableActivity {
+public class MainActivity extends WearableActivity {
 
     private static final SimpleDateFormat AMBIENT_DATE_FORMAT =
             new SimpleDateFormat("HH:mm", Locale.US);
@@ -22,7 +22,7 @@ public class Watch_Notificatier extends WearableActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_watch__notificatier);
+        setContentView(R.layout.activity_main);
         setAmbientEnabled();
 
         mContainerView = (BoxInsetLayout) findViewById(R.id.container);
